@@ -3,8 +3,14 @@ import '../../App.css';
 import {Link} from 'react-router-dom'
 
 function Home() {
+    
+    const title = {
+        background: 'none',
+        fontSize: '22em',
+        fontFamily: 'Stadium',
+        color: '#eeece9'
+    }
 
-//Estilos 
     const divStyle = {
         backgroundColor: '#3e4840',
         width: '100%',
@@ -15,12 +21,7 @@ function Home() {
         alignItems: 'center',
       };
     
-      const title = {
-        background: 'none',
-        fontSize: '22em',
-        fontFamily: 'Stadium',
-        color: '#eeece9'
-      }
+      
     
       const divButton = {
         margin:'0%',
@@ -55,7 +56,7 @@ function Home() {
 //Return
 return (
 <>
-    <div style={divStyle}>
+<div className={Home}>
     <h1 style={title}>NIEBLA</h1>
 
         <div style={divButton}>
